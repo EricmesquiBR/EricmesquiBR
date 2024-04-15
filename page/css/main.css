@@ -1,0 +1,138 @@
+body {
+    background-color: #333;
+    color: #f5f5f5;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+}
+
+/* ============TAGS============= */
+
+header {
+    background-color: #121212;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* = NAVIGATION = */
+nav {
+    background-color: #333; /* Dark background for the nav */
+    padding: 1rem; /* Add some padding */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the items */
+}
+
+nav ul li {
+    margin: 0 1rem; /* Add some space between items */
+}
+
+nav ul li a {
+    color: #535353; /* Light text color */
+    text-decoration: none; /* Remove underline */
+    font-family: "Roboto", sans-serif; /* Use the same font as the rest of the page */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #fff; /* Change text color on hover */
+}
+
+footer {
+    background-color: #121212;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+/* ============CLASSES========== */
+.social-icons {
+    display: flex;
+    justify-content: left;
+    gap: 1rem; /* Adjust the space between icons */
+}
+
+.social-icons a {
+    color: #f5f5f5; /* Icon color */
+    text-decoration: none;
+}
+
+.social-icons svg {
+    width: 24px;
+    height: 24px;
+}
+
+.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px; /* Reduced padding */
+}
+
+.sections-box {
+    background-color: #121212; /* Example background color */
+    padding: 20px; /* Padding inside the section */
+    padding-left: 15%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
+}
+
+.experience-box {
+    background-color: #121212;
+    margin-bottom: 5%;
+    padding: 20px; /* Adjust padding for better spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: #f5f5f5 solid 1px;
+    border-radius: 10px;
+    width: 90%; /* Make it full width on mobile */
+}
+
+@media screen and (min-width: 320px) and (max-width: 630px) {
+    .experience-box {
+        width: 60%; /* Adjust the width as needed */
+    }
+}
+
+@media (max-width: 767px) {
+    .experience-box {
+        width: calc(90% - 40px); /* Correct syntax */
+        font-size: 12px;
+        margin: 20px auto;
+    }
+}
+
+/* ============PARALAX========== */
+
+.parallax1 {
+    background-image: url("../img/descending1.jpg");
+    height: 300px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 {
+    background-image: url("../img/descending2.jpg");
+    height: 300px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

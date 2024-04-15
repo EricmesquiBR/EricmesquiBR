@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <title>Curriculum Template</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="manifest" href="manifest.json" />
+        <script>
+            window.addEventListener("load", () => {
+                registerSW()
+            })
+
+            // Register the Service Worker
+            async function registerSW() {
+                if ("serviceWorker" in navigator) {
+                    try {
+                        await navigator.serviceWorker.register(
+                            "serviceworker.js"
+                        )
+                    } catch (e) {
+                        console.log("SW registration failed")
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Eric Mesquita</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#education">Education</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#skills">Skills</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <div class="parallax1"></div>
+
+            <section class="sections-box" id="about">
+                <h2>About</h2>
+                <p>
+                    Software Engineer, Majoring in Systems Analysis and
+                    Development at the Federal University of Ceará (UFC).
+                </p>
+                <p>
+                    I work and do research mainly in the areas of LLM,
+                    Development Practices and Social Aspects on Morden Code
+                    Review.
+                </p>
+                <br />
+                <h2>Socials</h2>
+                <div class="social-icons">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        style="fill: #f5f5f5; --darkreader-inline-fill: #e8e6e3"
+                        data-darkreader-inline-fill=""
+                    >
+                        <path
+                            d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z"
+                        ></path>
+                    </svg>
+                    <a
+                        href="https://www.linkedin.com/in/z3r1c"
+                        aria-label="LinkedIn"
+                        >Eric Mesquita</a
+                    >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        style="fill: #f5f5f5; --darkreader-inline-fill: #e8e6e3"
+                        data-darkreader-inline-fill=""
+                    >
+                        <path
+                            d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"
+                        ></path>
+                    </svg>
+                    <a
+                        href="mailto:ericmesqui2468@gmail.com"
+                        aria-label="Email"
+                    >
+                        ericmesqui2468@gmail.com</a
+                    >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        style="fill: #f5f5f5; --darkreader-inline-fill: #e8e6e3"
+                        data-darkreader-inline-fill=""
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                        ></path>
+                    </svg>
+                    <a
+                        href="https://github.com/EricmesquiBR"
+                        aria-label="GitHub"
+                        >EricmesquiBR</a
+                    >
+                </div>
+            </section>
+
+            <div class="parallax2"></div>
+            <section class="sections-box" id="education">
+                <h2>Education</h2>
+
+                <div class="experience-box">
+                    <h3>Degree in Systems Analysis and Development.</h3>
+                    <p>Universidade Federal do Ceará</p>
+                    2022 - Today
+                </div>
+                <div class="experience-box">
+                    <h3>Professional Education in IT.</h3>
+                    <p>Escola Estadual de Ensino Profissional Adriano Nobre</p>
+                    2019 - 2021
+                </div>
+            </section>
+
+            <div class="parallax1"></div>
+
+            <section class="sections-box" id="experience">
+                <h2>Experience</h2>
+
+                <div class="experience-box">
+                    <h3>Supervised Traineeship in Computer Technician</h3>
+                    <p>Info Support</p>
+                    2021.2 - 2022.1
+                </div>
+            </section>
+            <div class="parallax2"></div>
+
+            <section class="sections-box" id="skills">
+                <h2>Skills</h2>
+                <!-- Add your skills here -->
+            </section>
+
+            <div class="parallax1"></div>
+        </main>
+
+        <footer>
+            <p>Last updated: April 2024</p>
+        </footer>
+        <script src="service-worker.js"></script>
+    </body>
+</html>
